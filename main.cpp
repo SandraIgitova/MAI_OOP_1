@@ -40,8 +40,7 @@ begin:
 		std::cout << "Введите вторую сумму." << std::endl;
 		a2.Read(std::cin);
 		std::cout << "\nРезультат деления:" << std::endl;
-		//std::cout << 
-		a.Div(a2).Write(std::cout); //<< std::endl;
+		std::cout << a.Div(a2) << std::endl;
 	}
 	if (x == 5) {
 		std::cout << "Введите число:" << std::endl;
