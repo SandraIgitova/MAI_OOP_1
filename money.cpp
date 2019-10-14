@@ -34,7 +34,7 @@ void Money::Read(std::istream& is) {
 void Money::Write(std::ostream& os) const {
 	os << funt << ' ';
 	os << shil << ' ';
-	os << pen << ' ';
+	os << int(pen) << ' ';
 	}
 
 // сложение сумм
