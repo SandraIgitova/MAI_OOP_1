@@ -20,46 +20,43 @@ begin:
 		std::cout << "Введите вторую сумму." << std::endl;
 		a2.Read(std::cin);
 		a2.Plus(a2).Write(std::cout);
-		//std::cout << "\nРезультат сложения:" << std::endl; 
-		//a.Show();
+		std::cout << "\nРезультат сложения:" << std::endl; 
 	}
 	if (x == 3) {
 		Money a2;
 		std::cout << "Введите вторую сумму." << std::endl;
 		a2.Read(std::cin);
-		//std::cout << "\nРезультат вычитания:" << std::endl;
+		std::cout << "\nРезультат вычитания:" << std::endl;
 		if (a2.AllSumGet() > a.AllSumGet())
 		{
-			a2.Minus(a);
-			//a2.Show();
+			a2.Minus(a).Write(std::cout);
 		}
 		else {
-			a.Minus(a2);
-			//a.Show();
+			a.Minus(a2).Write(std::cout);
 		}
 	}
 	if (x == 4) {
 		Money a2;
 		std::cout << "Введите вторую сумму." << std::endl;
 		a2.Read(std::cin);
-		//std::cout << "\nРезультат деления:" << std::endl;
+		std::cout << "\nРезультат деления:" << std::endl;
 		//std::cout << 
-		a.Div(a2); //<< std::endl;
+		a.Div(a2).Write(std::cout); //<< std::endl;
 	}
 	if (x == 5) {
 		std::cout << "Введите число:" << std::endl;
 		float arg;
 		std::cin >> arg;
-		//std::cout << "\nРезультат деления:" << std::endl;
-		a.DivN(arg);
+		std::cout << "\nРезультат деления:" << std::endl;
+		a.DivN(arg).Write(std::cout);
 		//a.Show();
 	}
 	if (x == 6) {
 		std::cout << "Введите число:" << std::endl;
 		float arg;
 		std::cin >> arg;
-		//std::cout << "\nРезультат умножения:" << std::endl;
-		a.Mult(arg);
+		std::cout << "\nРезультат умножения:" << std::endl;
+		a.Mult(arg).Write(std::cout);
 		//a.Show();
 	}
 	if (x == 7) {
