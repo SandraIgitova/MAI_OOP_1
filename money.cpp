@@ -51,6 +51,7 @@ Money Money::Plus(const Money& a2) const {
 Money Money::Minus(const Money& a2) const {
 	Money result;
 	result.SplitUp((this->AllSumGet() - a2.AllSumGet()));
+	return result;
 }
 
 // деление 2х сумм
@@ -61,12 +62,14 @@ double Money::Div(const Money& a2) const {
 // деление суммы на число
 Money Money::DivN(float arg) {
 	Money result;
-	result.SplitUp((uint64_t)((float)(this->AllSumGet())) / arg);
+	result.SplitUp((uint64_t)((float)(this->AllSumGet())) / arg);\
+	return result;
 }
 // умножение суммы на число
 Money Money::Mult(float arg) {
 	Money result;
 	result.SplitUp((uint64_t)((float)(this->AllSumGet())) * arg);
+	return result;
 }
 
 // сравнение
