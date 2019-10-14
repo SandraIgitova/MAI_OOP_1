@@ -32,12 +32,11 @@ void Money::Read(std::istream& is) {
 
 // Вывести сумму
 void Money::Write(std::ostream& os) const {
-	uint64_t f;
-	uint16_t s, p;
-	os << f;
-	os << s;
-	os << p;
+	os << funt << ' ';
+	os << shil << ' ';
+	os << pen << ' ';
 	}
+
 // сложение сумм
 Money Money::Plus(const Money& a2) const {
 	Money result;
